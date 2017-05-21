@@ -9,6 +9,7 @@
   <modules>
   	<module>MyShiro-Admin-Url</module>
   	<module>MyShiro-ShiroTest</module>
+  	<module>MyShiro-Base-URL</module>
   </modules>
   
   
