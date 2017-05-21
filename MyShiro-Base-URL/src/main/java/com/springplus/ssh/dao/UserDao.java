@@ -5,4 +5,6 @@ import com.springplus.ssh.entity.User;
 
 public interface UserDao extends BaseDao<User>{
 	
+	User getUserByUserName(String userName) throws Exception;
+	
 }

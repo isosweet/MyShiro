@@ -61,7 +61,7 @@ public class User implements Serializable {
 
 	/** 是否有效 0 有效 1 无效. */
 	@Column(name ="validity")
-	private Byte validity;
+	private Integer validity;
 
 	/** 创建时间. */
 	@Column(name ="create_date")
@@ -243,7 +243,7 @@ public class User implements Serializable {
 	 * @param validity
 	 *            是否有效 0 有效 1 无效
 	 */
-	public void setValidity(Byte validity) {
+	public void setValidity(Integer validity) {
 		this.validity = validity;
 	}
 
@@ -252,7 +252,7 @@ public class User implements Serializable {
 	 * 
 	 * @return 是否有效 0 有效 1 无效
 	 */
-	public Byte getValidity() {
+	public Integer getValidity() {
 		return this.validity;
 	}
 
