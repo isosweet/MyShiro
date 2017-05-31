@@ -2,6 +2,9 @@ package com.springplus.ssh.model;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
+
+import com.springplus.ssh.entity.Permission;
 
 /**
  *  用户身份信息
@@ -31,6 +34,16 @@ public class ActiveUser implements Serializable{
 	 * 登陆时间
 	 */
 	private Date loginTime;
+	
+	/**
+	 * 菜单
+	 */
+	private List<Permission> menus;
+	
+	/**
+	 * 权限
+	 */
+	private List<Permission> permissions;
 
 	public String getUserId() {
 		return userId;
@@ -54,6 +67,22 @@ public class ActiveUser implements Serializable{
 
 	public void setLoginTime(Date loginTime) {
 		this.loginTime = loginTime;
+	}
+
+	public List<Permission> getMenus() {
+		return menus;
+	}
+
+	public void setMenus(List<Permission> menus) {
+		this.menus = menus;
+	}
+
+	public List<Permission> getPermissions() {
+		return permissions;
+	}
+
+	public void setPermissions(List<Permission> permissions) {
+		this.permissions = permissions;
 	}
 	
 	

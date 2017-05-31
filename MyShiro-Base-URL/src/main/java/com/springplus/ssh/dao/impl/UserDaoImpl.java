@@ -18,9 +18,9 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao {
 		
 		List<User> userList = this.findByHql(hql, userName);
 		
-		if (userList != null && userList.size() == 1){
-			userList.get(0);
-		}
+		if (userList.isEmpty()) return null;
+		
+		if (userList.size() == 1) return userList.get(0);
 		
 		return null;
 	}
